@@ -1,0 +1,105 @@
+.notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 160px;
+}
+
+.notes h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.note {
+  width: 160px;
+  height: 160px;
+  margin-right: 40px;
+  background-color: gainsboro;
+}
+
+.selects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.selectbox {
+  width: 160px;
+  height: auto;
+  text-align: center;
+  margin-right: 40px;
+}
+
+.selectbox select {
+  font-size: 16px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.button button {
+  width: 120px;
+  height: auto;
+  margin-right: 16px;
+  font-size: 20px;
+}
+
+#allplay {
+  background-color: red;
+}
+
+#refresh {
+  background-color: greenyellow;
+}
+
+@media screen and (max-width: 1050px) {
+  .note {
+    width: 120px;
+    height: 120px;
+  }
+  .selectbox {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .note {
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+  }
+  .selectbox {
+    width: 48px;
+  }
+  .selectbox select {
+    font-size: 12px;
+  }
+  .button button {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
