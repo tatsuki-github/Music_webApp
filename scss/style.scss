@@ -4,18 +4,25 @@
   width: 100%;
   height: auto;
   margin-top: 160px;
-  h2 {
+
+  &__h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 160px;
+    height: 160px;
+    margin-right: 40px;
+    background-color: gainsboro;
+    @media screen and (max-width: 1050px) {
+      width: 120px;
+      height: 120px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 80px;
+      height: 80px;
+      margin-right: 8px;
+    }
   }
-}
-
-.note {
-  width: 160px;
-  height: 160px;
-  margin-right: 40px;
-  background-color: gainsboro;
 }
 
 .selects {
@@ -23,64 +30,48 @@
   justify-content: center;
   width: 100%;
   height: auto;
-}
-
-.selectbox {
-  width: 160px;
-  height: auto;
-  text-align: center;
-  margin-right: 40px;
-  select {
-    font-size: 16px;
+  &__selectbox {
+    width: 160px;
+    height: auto;
+    text-align: center;
+    margin-right: 40px;
+    select {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 1050px) {
+      width: 120px;
+      select {
+        font-size: 12px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      width: 48px;
+      select {
+        font-size: 12px;
+      }
+    }
   }
 }
 
-.button {
+.buttons {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  button {
+  #allplay {
+    background-color: red;
+  }
+
+  #refresh {
+    background-color: greenyellow;
+  }
+  &__btn {
     width: 120px;
     height: auto;
     margin-right: 16px;
     font-size: 20px;
-  }
-}
 
-#allplay {
-  background-color: red;
-}
-
-#refresh {
-  background-color: greenyellow;
-}
-
-@media screen and (max-width: 1050px) {
-  .note {
-    width: 120px;
-    height: 120px;
-  }
-
-  .selectbox {
-    width: 120px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .note {
-    width: 80px;
-    height: 80px;
-    margin-right: 8px;
-  }
-
-  .selectbox {
-    width: 48px;
-    select {
-      font-size: 12px;
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
     }
-  }
-
-  .button button {
-    font-size: 16px;
   }
 }
