@@ -10,7 +10,7 @@
   margin-top: 160px;
 }
 
-.notes h2 {
+.notes__h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,13 +20,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.note {
   width: 160px;
   height: 160px;
   margin-right: 40px;
   background-color: gainsboro;
+}
+
+@media screen and (max-width: 1050px) {
+  .notes__h2 {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .notes__h2 {
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+  }
 }
 
 .selects {
@@ -40,18 +52,36 @@
   height: auto;
 }
 
-.selectbox {
+.selects__selectbox {
   width: 160px;
   height: auto;
   text-align: center;
   margin-right: 40px;
 }
 
-.selectbox select {
+.selects__selectbox select {
   font-size: 16px;
 }
 
-.button {
+@media screen and (max-width: 1050px) {
+  .selects__selectbox {
+    width: 120px;
+  }
+  .selects__selectbox select {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .selects__selectbox {
+    width: 48px;
+  }
+  .selects__selectbox select {
+    font-size: 12px;
+  }
+}
+
+.buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,44 +91,23 @@
   margin-top: 40px;
 }
 
-.button button {
+.buttons #allplay {
+  background-color: red;
+}
+
+.buttons #refresh {
+  background-color: greenyellow;
+}
+
+.buttons__btn {
   width: 120px;
   height: auto;
   margin-right: 16px;
   font-size: 20px;
 }
 
-#allplay {
-  background-color: red;
-}
-
-#refresh {
-  background-color: greenyellow;
-}
-
-@media screen and (max-width: 1050px) {
-  .note {
-    width: 120px;
-    height: 120px;
-  }
-  .selectbox {
-    width: 120px;
-  }
-}
-
 @media screen and (max-width: 480px) {
-  .note {
-    width: 80px;
-    height: 80px;
-    margin-right: 8px;
-  }
-  .selectbox {
-    width: 48px;
-  }
-  .selectbox select {
-    font-size: 12px;
-  }
-  .button button {
+  .buttons__btn {
     font-size: 16px;
   }
 }
