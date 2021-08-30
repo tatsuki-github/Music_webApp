@@ -57,18 +57,20 @@
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  #allplay {
-    background-color: red;
-  }
 
-  #refresh {
-    background-color: greenyellow;
-  }
   &__btn {
     width: 120px;
     height: auto;
     margin-right: 16px;
     font-size: 20px;
+
+    &--play {
+      background-color: red;
+    }
+
+    &--refresh {
+      background-color: greenyellow;
+    }
 
     @media screen and (max-width: 480px) {
       font-size: 16px;
