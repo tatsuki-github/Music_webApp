@@ -1,14 +1,14 @@
 
 
 window.addEventListener("load", function(){
-    category1 = document.getElementById("category1");
-    category2 = document.getElementById("category2");
-    category3 = document.getElementById("category3");
-    category4 = document.getElementById("category4");
-    category1.onchange = changeCategory1;
-    category2.onchange = changeCategory2;
-    category3.onchange = changeCategory3;
-    category4.onchange = changeCategory4;
+    note_category1 = document.getElementById("note_category1");
+    note_category2 = document.getElementById("note_category2");
+    note_category3 = document.getElementById("note_category3");
+    note_category4 = document.getElementById("note_category4");
+    note_category1.onchange = changeCategory1;
+    note_category2.onchange = changeCategory2;
+    note_category3.onchange = changeCategory3;
+    note_category4.onchange = changeCategory4;
     allplay = document.getElementById("play");
     allplay.onclick = play;
     document.getElementById("refresh").onclick = function() { 
@@ -34,9 +34,9 @@ note_do2 = new Audio("sound/note_do2.mp3");
 
     function changeCategory1() {
 
-        var changedCategory1 = category1.value;  
+        var changed_note_category1 = note_category1.value;  
 
-        switch (changedCategory1){
+        switch (changed_note_category1){
             case "do":
                 note1 = note_do;
                 document.getElementById("1").innerText = "ド";            
@@ -74,9 +74,9 @@ note_do2 = new Audio("sound/note_do2.mp3");
     }
 
     function changeCategory2() {
-        var changedCategory2 = category2.value;  
+        var changed_note_category2 = note_category2.value;  
 
-        switch (changedCategory2){
+        switch (changed_note_category2){
             case "do":
                 note2 = note_do;
                 document.getElementById("2").innerText = "ド";            
@@ -115,9 +115,9 @@ note_do2 = new Audio("sound/note_do2.mp3");
 
 
     function changeCategory3() {
-        var changedCategory3 = category3.value; 
+        var changed_note_category3 = note_category3.value; 
 
-        switch (changedCategory3){
+        switch (changed_note_category3){
             case "do":
                 note3 = note_do;
                 document.getElementById("3").innerText = "ド";            
@@ -156,9 +156,9 @@ note_do2 = new Audio("sound/note_do2.mp3");
     }
 
     function changeCategory4() {
-        var changedCategory4 = category4.value;
+        var changed_note_category4 = note_category4.value;
 
-        switch (changedCategory4){
+        switch (changed_note_category4){
             case "do":
                 note4 = note_do;
                 document.getElementById("4").innerText = "ド";            
