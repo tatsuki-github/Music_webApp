@@ -91,19 +91,19 @@
   margin-top: 40px;
 }
 
-.buttons #allplay {
-  background-color: red;
-}
-
-.buttons #refresh {
-  background-color: greenyellow;
-}
-
 .buttons__btn {
   width: 120px;
   height: auto;
   margin-right: 16px;
   font-size: 20px;
+}
+
+.buttons__btn--play {
+  background-color: red;
+}
+
+.buttons__btn--refresh {
+  background-color: greenyellow;
 }
 
 @media screen and (max-width: 480px) {
