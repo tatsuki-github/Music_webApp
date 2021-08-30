@@ -9,7 +9,7 @@ window.addEventListener("load", function(){
     category2.onchange = changeCategory2;
     category3.onchange = changeCategory3;
     category4.onchange = changeCategory4;
-    allplay = document.getElementById("allplay");
+    allplay = document.getElementById("play");
     allplay.onclick = play;
   }, false)
 
