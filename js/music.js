@@ -11,6 +11,9 @@ window.addEventListener("load", function(){
     category4.onchange = changeCategory4;
     allplay = document.getElementById("play");
     allplay.onclick = play;
+    document.getElementById("refresh").onclick = function() { 
+        window.location.reload();
+    }
   }, false)
 
 var note1;
@@ -220,7 +223,5 @@ note_do2 = new Audio("sound/note_do2.mp3");
         note4.pause();
     }
 
-document.getElementById("refresh").onclick = function() { 
-    window.location.reload();
-}
+
     
